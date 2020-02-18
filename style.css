@@ -100,3 +100,110 @@ h4{
     height:20px;
 }
 
+
+.headerFlex{
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.circle{
+    width:225px;
+    height:225px;
+    border-radius:50%;
+    border:2px solid white;
+    background:red;
+    transition:2s;
+  
+}
+
+.circle .rotate{
+    width:100%;
+    height:100%;
+    position:absolute;
+    text-align:center;
+    --rotation:0;
+    font-size:20px;
+    font-weight:bold;
+    transform:rotate(calc(var(--rotation)*1deg))
+}
+
+.circle .rotate1{
+    --rotation:40;
+  
+}
+
+.circle .rotate2{
+    --rotation:80;
+    
+}
+
+.circle .rotate3{
+    --rotation:120;
+    
+}
+
+.circle .rotate4{
+    --rotation:160;
+}
+
+.circle .rotate5{
+    --rotation:200;
+}
+
+.circle .rotate6{
+    --rotation:240;
+}
+
+.circle .rotate7{
+    --rotation:280;
+}
+
+.circle .rotate8{
+    --rotation:320;
+}
+
+.circle .rotate9{
+    --rotation:360;
+} 
+
+
+.green, .white{
+    position:absolute;
+    border-radius:50%;
+    height:50%;
+    width:50%;
+    background:green;
+    left:25%;
+    top:25%;
+    border:3px solid black;
+}
+
+
+.winDiv{
+    height:100%;
+    width:100%;
+    position:absolute;
+    text-align:center;
+    background:linear-gradient(to right,red,green);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    transform:translateX(100%);
+    transition:1s;
+}
+
+.showWin{
+    transform:translateX(0%);
+    transition:1s;
+}
+
+.winner{
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+
+
+
+
